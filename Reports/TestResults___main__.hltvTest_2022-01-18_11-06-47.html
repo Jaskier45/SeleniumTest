@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-01-18 11:06:47</p>
+                <p class='attribute'><strong>Duration: </strong>22.74 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 2, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.hltvTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_auth</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_results</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div[1]/div[3]/div[4]/div[1]/div[2]/div[2]/a/div"}
+  (Session info: chrome=97.0.4692.71)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00B46903+2517251]
+	Ordinal0 [0x00ADF8E1+2095329]
+	Ordinal0 [0x009E2848+1058888]
+	Ordinal0 [0x00A0D448+1233992]
+	Ordinal0 [0x00A0D63B+1234491]
+	Ordinal0 [0x00A37812+1406994]
+	Ordinal0 [0x00A2650A+1336586]
+	Ordinal0 [0x00A35BBF+1399743]
+	Ordinal0 [0x00A2639B+1336219]
+	Ordinal0 [0x00A027A7+1189799]
+	Ordinal0 [0x00A03609+1193481]
+	GetHandleVerifier [0x00CD5904+1577972]
+	GetHandleVerifier [0x00D80B97+2279047]
+	GetHandleVerifier [0x00BD6D09+534521]
+	GetHandleVerifier [0x00BD5DB9+530601]
+	Ordinal0 [0x00AE4FF9+2117625]
+	Ordinal0 [0x00AE98A8+2136232]
+	Ordinal0 [0x00AE99E2+2136546]
+	Ordinal0 [0x00AF3541+2176321]
+	BaseThreadInitThunk [0x76D9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77AE7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77AE7A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "d:/андрій/Selenium/hltv_testcase.py", line 53, in test_results
+    self.driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[1]/div[3]/div[4]/div[1]/div[2]/div[2]/a/div").click()
+  File "C:\Users\Пользователь\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 520, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Users\Пользователь\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1246, in find_element
+    'value': value})['value']
+  File "C:\Users\Пользователь\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Пользователь\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div[1]/div[3]/div[4]/div[1]/div[2]/div[2]/a/div"}
+  (Session info: chrome=97.0.4692.71)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00B46903+2517251]
+	Ordinal0 [0x00ADF8E1+2095329]
+	Ordinal0 [0x009E2848+1058888]
+	Ordinal0 [0x00A0D448+1233992]
+	Ordinal0 [0x00A0D63B+1234491]
+	Ordinal0 [0x00A37812+1406994]
+	Ordinal0 [0x00A2650A+1336586]
+	Ordinal0 [0x00A35BBF+1399743]
+	Ordinal0 [0x00A2639B+1336219]
+	Ordinal0 [0x00A027A7+1189799]
+	Ordinal0 [0x00A03609+1193481]
+	GetHandleVerifier [0x00CD5904+1577972]
+	GetHandleVerifier [0x00D80B97+2279047]
+	GetHandleVerifier [0x00BD6D09+534521]
+	GetHandleVerifier [0x00BD5DB9+530601]
+	Ordinal0 [0x00AE4FF9+2117625]
+	Ordinal0 [0x00AE98A8+2136232]
+	Ordinal0 [0x00AE99E2+2136546]
+	Ordinal0 [0x00AF3541+2176321]
+	BaseThreadInitThunk [0x76D9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77AE7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77AE7A6E+238]
+
+d:/андрій/Selenium/hltv_testcase.py:51: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  self.driver.find_element_by_class_name("navresults").click()
+d:/андрій/Selenium/hltv_testcase.py:53: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  self.driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[1]/div[3]/div[4]/div[1]/div[2]/div[2]/a/div").click()
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_stats</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div[1]/div[3]/div[7]/div[1]/div[3]/a"}
+  (Session info: chrome=97.0.4692.71)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00B46903+2517251]
+	Ordinal0 [0x00ADF8E1+2095329]
+	Ordinal0 [0x009E2848+1058888]
+	Ordinal0 [0x00A0D448+1233992]
+	Ordinal0 [0x00A0D63B+1234491]
+	Ordinal0 [0x00A37812+1406994]
+	Ordinal0 [0x00A2650A+1336586]
+	Ordinal0 [0x00A35BBF+1399743]
+	Ordinal0 [0x00A2639B+1336219]
+	Ordinal0 [0x00A027A7+1189799]
+	Ordinal0 [0x00A03609+1193481]
+	GetHandleVerifier [0x00CD5904+1577972]
+	GetHandleVerifier [0x00D80B97+2279047]
+	GetHandleVerifier [0x00BD6D09+534521]
+	GetHandleVerifier [0x00BD5DB9+530601]
+	Ordinal0 [0x00AE4FF9+2117625]
+	Ordinal0 [0x00AE98A8+2136232]
+	Ordinal0 [0x00AE99E2+2136546]
+	Ordinal0 [0x00AF3541+2176321]
+	BaseThreadInitThunk [0x76D9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77AE7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77AE7A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "d:/андрій/Selenium/hltv_testcase.py", line 60, in test_stats
+    self.driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[1]/div[3]/div[7]/div[1]/div[3]/a").click()
+  File "C:\Users\Пользователь\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 520, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Users\Пользователь\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1246, in find_element
+    'value': value})['value']
+  File "C:\Users\Пользователь\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Пользователь\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div[1]/div[3]/div[7]/div[1]/div[3]/a"}
+  (Session info: chrome=97.0.4692.71)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00B46903+2517251]
+	Ordinal0 [0x00ADF8E1+2095329]
+	Ordinal0 [0x009E2848+1058888]
+	Ordinal0 [0x00A0D448+1233992]
+	Ordinal0 [0x00A0D63B+1234491]
+	Ordinal0 [0x00A37812+1406994]
+	Ordinal0 [0x00A2650A+1336586]
+	Ordinal0 [0x00A35BBF+1399743]
+	Ordinal0 [0x00A2639B+1336219]
+	Ordinal0 [0x00A027A7+1189799]
+	Ordinal0 [0x00A03609+1193481]
+	GetHandleVerifier [0x00CD5904+1577972]
+	GetHandleVerifier [0x00D80B97+2279047]
+	GetHandleVerifier [0x00BD6D09+534521]
+	GetHandleVerifier [0x00BD5DB9+530601]
+	Ordinal0 [0x00AE4FF9+2117625]
+	Ordinal0 [0x00AE98A8+2136232]
+	Ordinal0 [0x00AE99E2+2136546]
+	Ordinal0 [0x00AF3541+2176321]
+	BaseThreadInitThunk [0x76D9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77AE7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77AE7A6E+238]
+
+d:/андрій/Selenium/hltv_testcase.py:58: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  self.driver.find_element_by_class_name("navstats").click()
+d:/андрій/Selenium/hltv_testcase.py:60: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  self.driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[1]/div[3]/div[7]/div[1]/div[3]/a").click()
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 4, Pass: 2, Error: 2 -- Duration: 22.74 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
